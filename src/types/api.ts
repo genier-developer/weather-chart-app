@@ -67,6 +67,9 @@ export type DataPoint = {
     description: string;
     icon: string;
   }[];
+  wind: {
+    speed: number;
+  };
   dt_txt: string;
 }
 
