@@ -1,0 +1,47 @@
+.weather-chart-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 24px;
+  
+  .recharts-wrapper {
+    font-family: 'Roboto', sans-serif;
+    
+    .recharts-cartesian-axis-tick-value {
+      font-size: 0.75rem;
+      fill: #757575;
+    }
+    
+    .recharts-legend-item-text {
+      color: #333;
+      font-size: 0.875rem;
+    }
+    
+    .recharts-tooltip-wrapper {
+      .recharts-default-tooltip {
+        background-color: rgba(255, 255, 255, 0.95) !important;
+        border: none !important;
+        border-radius: 4px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        padding: 8px 12px !important;
+        
+        .recharts-tooltip-label {
+          color: #333;
+          font-weight: 500;
+          margin-bottom: 4px;
+        }
+        
+        .recharts-tooltip-item {
+          color: #1976d2;
+          font-size: 0.875rem;
+          padding: 2px 0;
+        }
+      }
+    }
+    
+    .recharts-line-curve {
+      stroke-width: 2;
+    }
+  }
+} 

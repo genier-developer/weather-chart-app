@@ -1,4 +1,5 @@
 import {FC, FormEvent, useState} from 'react';
+import './city-input.scss';
 
 type CityInputProps = {
   onSearch: (city: string) => void;
@@ -13,7 +14,7 @@ export const CityInput: FC<CityInputProps> = ({onSearch}) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="city-input-form" onSubmit={handleSubmit}>
       <input
         type="text"
         value={city}
